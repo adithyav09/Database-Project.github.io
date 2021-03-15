@@ -1,3 +1,4 @@
+//JavaScript practice refreshser
 const fetchData = () => {
     const promise = new Promise((resolve, reject) =>{
         setTimeout(() => {
