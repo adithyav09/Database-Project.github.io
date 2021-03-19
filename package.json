@@ -1,0 +1,31 @@
+{
+  "name": "database-project",
+  "version": "1.0.0",
+  "description": "Creating a UWU Bank Web application where users get no charge commission for withdrawal and deposit and easy access to their funds and budgeting information.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./js/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adithyav09/Database-Project.git"
+  },
+  "keywords": [],
+  "author": "Adithya Venkatesh and Derek Yong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adithyav09/Database-Project/issues"
+  },
+  "homepage": "https://github.com/adithyav09/Database-Project#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "mysql": "^2.18.1",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

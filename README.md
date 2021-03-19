@@ -1,2 +1,2 @@
 # Database-Project
-Creating a UWU Bank Web application where users get no charge commission for withdrawal and deposit and easy access to their funds and budgeting information.
+Creating a vacation getaway website where anyone who is seeking a simple and easy getaway can come to our website and book a nice travel to our awesome vacation spots.
