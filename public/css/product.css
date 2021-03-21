@@ -70,7 +70,7 @@ main {
 button {
     font: inherit;
     border: 1px solid rgb(3, 3, 3);
-    color:rgb(195, 0, 255);
+    color:rgb(0, 12, 177);
     background: white;
     border-radius: 3px;
     cursor: pointer;
@@ -78,5 +78,5 @@ button {
 
 button:hover,
 button:active {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 0, 0);
 }
