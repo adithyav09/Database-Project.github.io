@@ -12,9 +12,11 @@ html(lang="en")
             nav.mainheader__nav
                 ul.main-header__item-list
                     li.main-header__item
-                        a.active(href="/") Locations
+                        a.active(href="/") Home 
+                    li.main-header__item 
+                        a(href="/admin/locations") Locations
                     li.main-header__item
-                        a(href="/admin/add-product") Book Trip
+                        a(href="/admin/add-product") Add Product
         main
             if prods.length > 0
                 .grid
