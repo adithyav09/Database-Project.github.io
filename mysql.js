@@ -1,6 +1,8 @@
-var mysql = require('mysql');
-var express = require('express');
-var app = express();
+const mysql = require('mysql');
+const express = require('express');
+const app = express();
+const router = express.Router();
+const path = require('path');
 
 var con = mysql.createConnection({
   host: "localhost",
@@ -14,16 +16,16 @@ con.connect(function(err) {
       return console.log("Connected!");
 });
 
-app.get('/', function(req, resp) {
+app.get('/', function(req, res) {
   // about mysql
-  connection.query("SELECT * FROM vac_location", function(error, rows, fields) {
+  con.query("SELECT * FROM vac_location", function(error, rows, fields) {
     //callback
-    if (!!error) {
-      console.log('Error in the quer');
+    if (!error) {
+      console.log('Error in the query');
     } else {
       console.log('Successful query');
+      res.sendFile(path.join(__dirname + '/test.html'));
     }
   });
 })
-
 app.listen(1337);
