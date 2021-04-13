@@ -15,6 +15,9 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -33,27 +36,37 @@
         
         <main>
             <div class="customerbox">
-                <h2>Customer Information</h2>
-                <p>First Name:</p>
-                <form action="/test/post-username" method="POST"> <input type="text" name="username"> <button          type="submit"> Send </button> </form>
+                <h2>Customer Information</h2><br>
 
-                <p>Last Name:</p>
-                <form action="/test/post-username" method="POST"> <input type="text" name="username"> <button          type="submit"> Send </button> </form>
+                <form action="/action_page.php">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname"><br><br>
 
-                <p>Age:</p>
-                <form action="/test/post-username" method="POST"> <input type="text" name="username"> <button          type="submit"> Send </button> </form>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname"><br><br>
 
-                <p>Phone Number:</p>
-                <form action="/test/post-username" method="POST"> <input type="text" name="username"> <button          type="submit"> Send </button> </form>
+                    <label for="age">Age:</label><br>
+                    <input type="text" id="age" name="age"><br><br>
 
-                <p>Address:</p>
-                <form action="/test/post-username" method="POST"> <input type="text" name="username"> <button          type="submit"> Send </button> </form>
+                    <label for="city">City:</label><br>
+                    <input type="text" id="city" name="city"><br><br>
+
+                    <label for="state">State:</label><br>
+                    <input type="text" id="state" name="state"><br><br>
+
+                    <label for="phone_number">Phone Number:</label><br>
+                    <input type="text" id="phone_number" name="phone_number"><br><br>
+
+                    <input type="submit" value="Submit">
+                  </form> 
 
             </div>
 
 
             <div class="vacationbox">
                 <h2>Vacation Information</h2>
+
+
 
 
 
