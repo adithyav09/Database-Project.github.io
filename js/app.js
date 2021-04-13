@@ -1,3 +1,31 @@
-const fs = require('fs');
+const mysql = require('mysql');
+const express = require('express');
+const app = express();
+const router = express.Router();
+const path = require('path');
 
-fs.writeFileSync('hello.txt', 'Hello from Node.js to Adithya');
+var con = mysql.createConnection({
+  host: "localhost",
+  user: "root",
+  password: "saybyesayhi123",
+  database: 'VacationDB'
+});
+
+con.connect(function(err) {
+    if (err) throw err;
+      return console.log("Connected!");
+});
+
+app.get('/', function(req, res) {
+  // about mysql
+  con.query("SELECT * FROM vac_location", function(error, rows, fields) {
+    //callback
+    if (!error) {
+      console.log('Error in the query');
+    } else {
+      console.log('Successful query');
+      res.sendFile(path.join(__dirname + '/index.html'));
+    }
+  });
+})
+app.listen(3000);

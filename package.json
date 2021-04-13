@@ -1,0 +1,25 @@
+{
+  "name": "database-project",
+  "version": "1.0.0",
+  "description": "Vacation Getaway Wesite",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./js/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adithyav09/Database-Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adithyav09/Database-Project/issues"
+  },
+  "homepage": "https://github.com/adithyav09/Database-Project#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "path": "^0.12.7"
+  }
+}
