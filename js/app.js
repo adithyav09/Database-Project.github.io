@@ -41,6 +41,17 @@ app.get('/booking', function(req, res) {
     res.sendFile(path.join(__dirname, '../templates', 'booking.html'));
 });
 
+app.get('/profile', function(req, res) {
+  //callback
+    console.log('Successful query');
+    res.sendFile(path.join(__dirname, '../templates', 'profile.html'));
+});
+
+app.get('/vacations', function(req, res) {
+  //callback
+    console.log('Successful query');
+    res.sendFile(path.join(__dirname, '../templates', 'vacations.html'));
+});
 // //404 Page
 // app.use((req, res, next) => {
 //   res.status(404).sendFile(path.join(__dirname, '../templates', '404.html'));
