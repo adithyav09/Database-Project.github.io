@@ -49,3 +49,40 @@ nav a {
     font-family: 'Big Shoulders Display', cursive;
     color: white;
 }
+
+.customerbox h2 {
+    font-size: 1.5rem;
+    margin-bottom: auto;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-decoration: underline;
+}
+
+.customerbox p {
+    font-size: 1rem;
+    margin-bottom: auto;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.vacationbox{
+    padding-top: 30px;
+}
+
+.vacationbox h2 {
+    font-size: 1.5rem;
+    margin-bottom: auto;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-decoration: underline;
+}
+
+.vacationbox p {
+    font-size: 1rem;
+    margin-bottom: auto;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+
+
