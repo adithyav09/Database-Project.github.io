@@ -19,10 +19,11 @@ con.connect(function(err) {
         return console.log("Connected to Vacation Database!");
 });
 
+// app.static('/static', express.use('public'));
+
 app.get('/', function(req, res) {
-  // about mysql
     //callback
-    if (!error) {
+    if (err) {
       console.log('Error in the query');
     } else {
       console.log('Successful query');
