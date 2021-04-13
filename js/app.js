@@ -8,17 +8,19 @@ var con = mysql.createConnection({
   host: "localhost",
   user: "root",
   password: "saybyesayhi123",
-  database: 'VacationDB'
+  database: 'vacationdb'
 });
 
 con.connect(function(err) {
     if (err) throw err;
-      return console.log("Connected!");
+    con.query("SELECT * FROM vacationdb.customer;", function(error, rows, fields) {
+        if (err) throw err;
+        console.log(rows);
+        return console.log("Connected to Vacation Database!");
 });
 
 app.get('/', function(req, res) {
   // about mysql
-  con.query("SELECT * FROM vac_location", function(error, rows, fields) {
     //callback
     if (!error) {
       console.log('Error in the query');
