@@ -32,12 +32,16 @@ nav {
 }
 
 main {
-    height:400px;
+    min-height:500px;
     text-align: center;
-    padding-top: 80px;
     padding-right: 240px;
     padding-left: 240px;
 
+}
+
+footer {
+    margin-top: 50px;
+    min-height: 200px;
 }
 
 a {
@@ -55,7 +59,7 @@ nav a {
 h1 {
     padding-left: 40px;
     text-align: left;
-    font-size: 60px;
+    font-size: 80px;
     font-family: 'Big Shoulders Display', cursive;
     color: white;
 }
@@ -64,7 +68,14 @@ h1 {
     padding-left: 10px;
 }
 
-h2 {
+main h2{
+    font-size: 60px;
+    font-family: 'Big Shoulders Display';
+    color: white;
+}
+
+.cards h2 {
+    padding-top: 40px;
     font-size: 40px;
     font-family: 'Big Shoulders Display';
     color: white;
@@ -77,6 +88,46 @@ h2 {
 
 
 .about {
+    background-color: rgb(3, 3, 3, 0.75);
     padding-top: 100px;
     text-align: center;
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+
+
+.mybutton {
+    background-color: teal;
+    color:white;
+    font-family: 'Playfair Display', serif;
+    padding: 11px 25px 11px 25px;
+    display:inline-block;
+}
+
+main a{
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.card1 {
+    background-color: teal;
+    min-height: 250px;
+    width: 30%;
+}
+
+.card2 {
+    background-color: teal;
+    min-height: 250px;
+    width: 30%;
+}
+
+.card1, .card2, .card3 {
+    padding: 30px 30px 20px 30px;
+    box-sizing: border-box;
 }

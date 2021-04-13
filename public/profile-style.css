@@ -2,7 +2,6 @@ html {
     min-height: 100%; /* This is get rid of gray screen if background no-repeat is put to no-repeat */
 }
 
-
 body {
     background-image: linear-gradient(160deg, #0093E9, #80D0C7);
     background-repeat: no-repeat;
@@ -48,4 +47,8 @@ nav a {
     font-size: 60px;
     font-family: 'Big Shoulders Display', cursive;
     color: white;
+}
+
+.logo {
+    padding-left: 10px;
 }
