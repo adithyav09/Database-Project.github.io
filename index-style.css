@@ -1,0 +1,82 @@
+html {
+    height: 100% 
+}
+
+body {
+    background-image: linear-gradient(160deg, #0093E9, #80D0C7);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    margin-left:auto;
+    margin-right:auto;
+    width: 1024px;
+
+}
+
+header {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.308); /* 4th dimension is transparency */
+    /* height:40px; */
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+main {
+    height:400px;
+    text-align: center;
+    padding-top: 80px;
+    padding-right: 240px;
+    padding-left: 240px;
+
+}
+
+a {
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right:10px;
+}
+
+h1 {
+    padding-left: 40px;
+    text-align: left;
+    font-size: 60px;
+    font-family: 'Big Shoulders Display', cursive;
+    color: white;
+}
+
+.logo {
+    padding-left: 10px;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: 'Big Shoulders Display';
+    color: white;
+}
+
+
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+
+
+.about {
+    padding-top: 100px;
+    text-align: center;
+}
