@@ -19,7 +19,7 @@ con.connect(function(err) {
         return console.log("Connected to Vacation Database!");
 });
 
-// app.static('/static', express.use('public'));
+
 
 app.get('/', function(req, res) {
     //callback
@@ -28,6 +28,7 @@ app.get('/', function(req, res) {
     } else {
       console.log('Successful query');
       res.sendFile(path.join(__dirname, '../', 'index.html'));
+      app.use('/static', express.static('public'));
     }
   });
 })
