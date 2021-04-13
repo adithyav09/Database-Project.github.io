@@ -27,8 +27,8 @@ app.get('/', function(req, res) {
       console.log('Error in the query');
     } else {
       console.log('Successful query');
-      res.sendFile(path.join(__dirname, '../', 'index.html'));
       app.use('/static', express.static('public'));
+      res.sendFile(path.join(__dirname, '../', 'index.html'));
     }
   });
 })
