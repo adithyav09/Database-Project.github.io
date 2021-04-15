@@ -49,7 +49,12 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false })
 // POST /booking gets urlencoded bodies
 app.post('/booking', urlencodedParser, function(req, res) {
   //callback
-  var sql = "INSERT INTO customers (name, address) VALUES ?";
+  var sql = "INSERT INTO customer (FirstName, LastName, Age, PhoneNumber, City, State) VALUES ('Wayne', 'Ker', '21', '1234566789', 'Duluth', 'GA')";
+  
+  con.query(sql, function(err, result) {
+    if (err) throw err;
+    console.log("1 record inserted");
+  })
   console.log(req.body);
     // res.sendFile(path.join(__dirname, '../templates', 'booking.html'));
 });
