@@ -18,6 +18,7 @@ body {
 }
 
 header {
+    padding-left: 330px;
     height: 120px;
     display: flex;
     align-items: center;
@@ -58,7 +59,7 @@ nav a {
 }
 
 .container h1 {
-    padding-left: 40px;
+
     text-align: left;
     font-size: 80px;
     font-family: 'Big Shoulders Display', cursive;
@@ -89,8 +90,10 @@ main h2{
 
 
 .about {
-    background-color: rgb(3, 3, 3, 0.75);
-    padding-top: 100px;
+    display:flex;
+    justify-content: space-around;
+    background-color: rgba(22, 61, 66, 0.75);
+    padding: 50px 50px;
     text-align: center;
     color: white;
     font-family: 'Playfair Display', serif;
@@ -112,7 +115,7 @@ main a{
 
 .cards {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     text-align: center;
 }
 
@@ -133,3 +136,10 @@ main a{
     box-sizing: border-box;
 }
 
+i {
+    font-size: 80px;
+}
+
+.about i {
+    font-size: 30px;
+}

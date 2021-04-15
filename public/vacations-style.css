@@ -16,6 +16,7 @@ body {
 }
 
 header {
+    padding-left: 330px;
     height: 120px;
     display: flex;
     align-items: center;
@@ -46,6 +47,23 @@ nav a {
     padding-left: 40px;
     text-align: left;
     font-size: 60px;
+    font-family: 'Big Shoulders Display', cursive;
+    color: white;
+}
+
+h2 {
+    text-align: left;
+    font-size: 80px;
+    font-family: 'Big Shoulders Display', cursive;
+    color: white;
+
+}
+
+.container p {
+    padding-right: 40px;
+    padding-left: 40px;
+    text-align: left;
+    font-size: 30px;
     font-family: 'Big Shoulders Display', cursive;
     color: white;
 }
@@ -88,7 +106,7 @@ main {
 
 .location2{
     flex:1;
-    background-image: url(images/LA_350x500.jpg);
+    background-image: url(images/la4_350x500.jpg);
 }
 
 .about2 {
