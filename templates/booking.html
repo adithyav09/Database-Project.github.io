@@ -35,10 +35,11 @@
         </nav>
         
         <main>
-            <div class="customerbox">
-                <h2>Customer Information</h2><br>
 
-                <form action="/booking" method="POST">
+            <div class="customerbox">
+                <h2>Registeration Information</h2><br>
+
+                <form action="/booking" method= "POST">
                     <label for="fname">First name:</label><br>
                     <input type="text" id="fname" name="fname"><br><br>
 
@@ -57,29 +58,15 @@
                     <label for="phone_number">Phone Number:</label><br>
                     <input type="text" id="phone_number" name="phone_number"><br><br>
 
-                    <input type="submit" value="Submit">
-                  </form> 
+                    <label for="vacation">Choose a Vacation Location:</label>
+                    <select id="vacation" name="vacation">
+                        <option value="pick">Pick a Location</option>
+                        <option value="NY">New York, NY</option>
+                        <option value="CA">Los Angeles, CA</option>
+                        <option value="FL">Miami, FL</option>
+                    </select>
 
-            </div>
-
-
-            <div class="vacationbox">
-                <h2>Vacation Information</h2><br>
-
-                <form action="/profile">
-                    <label for="location">Vacation Location:</label><br>
-                    <input type="text" id="location" name="location"><br><br>
-
-                    <label for="airport">Airport:</label><br>
-                    <input type="text" id="airport" name="airport"><br><br>
-
-                    <label for="hotel">Hotel:</label><br>
-                    <input type="text" id="hotel" name="hotel"><br><br>
-
-                    <label for="restaurant">Restaurant:</label><br>
-                    <input type="restaurant" id="restaurant" name="restaurant"><br><br>
-
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Submit"><br><br>
                   </form> 
 
 
