@@ -34,6 +34,7 @@ nav {
 }
 
 main {
+    background-color: rgb(132, 0, 255, 0.50);
     min-height:500px;
     text-align: center;
     padding-right: 240px;
@@ -114,9 +115,12 @@ main a{
 }
 
 .cards {
+    background-color: rgb(132, 0, 255, 0.50);
     display: flex;
     justify-content: space-around;
     text-align: center;
+    padding-bottom: 30px;
+    padding-top: 20px;
 }
 
 .card1 {
