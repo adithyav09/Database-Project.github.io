@@ -8,7 +8,7 @@ const bodyParser = require('body-parser');
 var con = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "Duluth.11173",
+  password: "saybyesayhi123",
   database: 'vacationdb'
 });
 
@@ -16,7 +16,7 @@ con.connect(function(err) {
     if (err) throw err;
     con.query("SELECT * FROM vacationdb.customer;", function(error, rows, fields) {
         if (err) throw err;
-        console.log(rows);
+        // console.log(rows);
         return console.log("Connected to Vacation Database!");
 });
 
@@ -49,13 +49,15 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false })
 // POST /booking gets urlencoded bodies
 app.post('/booking', urlencodedParser, function(req, res) {
   //callback
-  var sql = "INSERT INTO customer (FirstName, LastName, Age, PhoneNumber, City, State) VALUES ('Wayne', 'Ker', '21', '1234566789', 'Duluth', 'GA')";
+  var sql = "INSERT INTO customer (FirstName, LastName, Age, PhoneNumber, City, State) VALUES (" + `'${req.body.fname}', '${req.body.lname}', '${req.body.age}', '${req.body.phone_number}', '${req.body.city}', '${req.body.state}');`
   
   con.query(sql, function(err, result) {
     if (err) throw err;
     console.log("1 record inserted");
+    console.log(req.body);
   })
-  console.log(req.body);
+  console.log(req.bodyParser);
+  // console.log(`'${req.body.fname}'`)
     // res.sendFile(path.join(__dirname, '../templates', 'booking.html'));
 });
 
